@@ -22,7 +22,7 @@ const meta = {
 
 export default meta;
 
-const overviewHeaderProps: HeaderLogicProps = {
+const myDataHeaderProps: HeaderLogicProps = {
   breadcrumbs: {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
@@ -34,11 +34,11 @@ const overviewHeaderProps: HeaderLogicProps = {
 type Story = StoryObj<typeof meta>;
 
 const copyright = '© 2022 Gemeente Den Haag';
-export const OverviewPage: Story = {
+export const myDataPage: Story = {
   render: () => (
     <Page>
       <PageHeader>
-        <HeaderLogic {...overviewHeaderProps} />
+        <HeaderLogic {...myDataHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
@@ -76,9 +76,9 @@ export const OverviewPage: Story = {
             wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
           </Paragraph>
           <List>
-            <ListItem>
+            <ListItem primaryText="test">
               <ListItemText>
-                test<ListItemIcon></ListItemIcon>
+                <ListItemIcon></ListItemIcon>
               </ListItemText>
             </ListItem>
           </List>
