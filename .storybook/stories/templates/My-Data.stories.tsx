@@ -7,7 +7,7 @@ import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
 import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
-import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
+import { footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
 
 import './story-login.css';
 
