@@ -21,7 +21,7 @@ import {
   TableHeader,
 } from '../../../components/Table/src';
 
-import { ArrowRightIcon } from '../../../components/Icons/src';
+import { ArrowRightIcon, AlertTriangleFilledIcon } from '../../../components/Icons/src';
 
 const meta = {
   title: 'Templates/OverviewPage',
@@ -93,16 +93,18 @@ export const OverviewPage: Story = {
             <TableBody>
               <TableRow>
                 <TableHeader scope="row">Geef informatie voor uw aanvraag subsidie geluidisolatie</TableHeader>
-                <TableCell>nog 2 dagen<ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
+                <TableCell>
+                   {/* <AlertTriangleFilledIcon color="inherit"></AlertTriangleFilledIcon> */}
+                   nog 2 dagen <ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
 
               </TableRow>
               <TableRow>
                 <TableHeader scope="row">Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein </TableHeader>
-                <TableCell>vóór 1 maart 2023</TableCell>
+                <TableCell>vóór 1 maart 2023<ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
               </TableRow>
               <TableRow>
                 <TableHeader scope="row">Verleng uw identiteitskaart</TableHeader>
-                <TableCell>vóór 1 maart 2023</TableCell>
+                <TableCell><ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
 
               </TableRow>
             </TableBody>
