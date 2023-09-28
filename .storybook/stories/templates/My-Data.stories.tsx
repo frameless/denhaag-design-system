@@ -12,6 +12,20 @@ import { footerLegalData, footerSocialData, newsletterData, contactData } from '
 import './story-login.css';
 
 // import { List, ListItem, ListItemText, ListItemIcon } from '../../../components/List/src';
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableHeader,
+} from '../../../components/Table/src';
+
+import { EditIcon } from '../../../components/Icons/src';
+import { List, ListSubheader, ListItem } from '../../../components/List/src';
+import { ArrowRightIcon } from '../../../components/Icons/src';
+import { Link } from '../../../components/Link/src';
 
 const meta = {
   title: 'Templates',
