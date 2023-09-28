@@ -11,7 +11,7 @@ import { footerLegalData, footerSocialData, newsletterData, contactData } from '
 
 import './story-login.css';
 
-import { List, ListItem, ListItemText, ListItemIcon } from '../../../components/List/src';
+// import { List, ListItem, ListItemText, ListItemIcon } from '../../../components/List/src';
 
 const meta = {
   title: 'Templates',
@@ -75,12 +75,13 @@ export const myDataPage: Story = {
             In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
             wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
           </Paragraph>
-          <List>
+          {/* <List>
             <ListItem primaryText="test">
               <ListItemText>
                 <ListItemIcon></ListItemIcon>
               </ListItemText>
             </ListItem>
+          </List> */}
           </List>
         </main>
       </ResponsiveContent>
