@@ -21,7 +21,7 @@ import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../compone
 import { Tabs } from '../../../components/Tab/src';
 
 const meta = {
-  title: 'Templates/Lopende zaken page',
+  title: 'Templates/LopendeZaken',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -104,9 +104,9 @@ export const LopendeZaken: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
-          <Tabs {...TabsProps}></Tabs>
-          <CaseCard {...CardCaseProps}></CaseCard>
-          <CaseCard {...CardCaseProps}></CaseCard>
+          {/* <Tabs {...tabsProps}></Tabs> */}
+          <CaseCard {...cardCaseProps}></CaseCard>
+          <CaseCard {...cardCaseProps}></CaseCard>
         </main>
       </ResponsiveContent>
       <PageFooter>
