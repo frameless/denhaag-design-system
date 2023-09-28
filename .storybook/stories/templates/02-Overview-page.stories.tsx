@@ -21,7 +21,11 @@ import {
   TableHeader,
 } from '../../../components/Table/src';
 
-import { ArrowRightIcon, AlertTriangleFilledIcon } from '../../../components/Icons/src';
+import { ArrowRightIcon, CircleWarningIcon } from '../../../components/Icons/src';
+import { CaseCard } from '../../../components/Card/src';
+
+
+
 
 const meta = {
   title: 'Templates/OverviewPage',
@@ -94,8 +98,8 @@ export const OverviewPage: Story = {
               <TableRow>
                 <TableHeader scope="row">Geef informatie voor uw aanvraag subsidie geluidisolatie</TableHeader>
                 <TableCell>
-                   {/* <AlertTriangleFilledIcon color="inherit"></AlertTriangleFilledIcon> */}
-                   nog 2 dagen <ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
+                   <CircleWarningIcon color="inherit"></CircleWarningIcon>
+                   nog 2 dagen!! <ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
 
               </TableRow>
               <TableRow>
@@ -109,7 +113,18 @@ export const OverviewPage: Story = {
               </TableRow>
             </TableBody>
           </Table>
-          <Table></Table>
+          <CaseCard
+  date={new Date("2020-10-17T00:00:00.000Z")}
+  href="#"
+  title="Aanvraag subsidie geluidsisolatie"
+
+/>
+<CaseCard
+  date={new Date("2020-08-01T00:00:00.000Z")}
+  href="#"
+  title="Aanvraag Ooievaarspas"
+/>
+
         </main>
       </ResponsiveContent>
       <PageFooter>
