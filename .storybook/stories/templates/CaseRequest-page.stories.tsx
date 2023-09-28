@@ -1,5 +1,9 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2, Paragraph } from '../../../components/Typography/src';
+import { Heading2 } from '../../../components/Typography/src';
+import { Sidenav, SidenavList, SidenavItem, SidenavLink } from '../../../components/Sidenav/src';
+import { BadgeCounter } from '../../../components/BadgeCounter/src';
+import { GridIcon, InboxIcon, ArchiveIcon } from '../../../components/Icons/src';
+import { Divider } from '../../../components/Divider/src';
 import { Link } from '../../../components/Link/src';
 import Alert from '../../../components/Alert/src';
 import React from 'react';
@@ -17,10 +21,10 @@ import {
   copyright,
 } from '../templates/util';
 
-import './story-login.css';
+import './CaseRequest-page.scss';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/Case Request Page',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -54,26 +58,47 @@ const loginHeaderProps: HeaderLogicProps = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Login: Story = {
+export const Request: Story = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
         <HeaderLogic {...loginHeaderProps} />
       </PageHeader>
       <ResponsiveContent className="denhaag-page-content">
-        <Heading2>Inloggen</Heading2>
-        <Paragraph>
-          Bent u gemachtigd? <Link href="#">Log in plaats hiervan in als gemachtigde.</Link>
-        </Paragraph>
-        <AuthenticationCardGroup cards={['DigiD', 'eHerkenning', 'eIDAS']} responsive />
-        <Heading2>Inloggen als gemachtigde</Heading2>
-        <Alert
-          text=""
-          title="Om in te loggen als gemachtigde heeft u een geldige machtiging nodig."
-          variant="info"
-          className="denhaag-authentication__alert"
-        />
-        <AuthenticationCardGroup cards={['DigiD', 'eHerkenning']} responsive />
+        <Sidenav>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink current href="/#">
+                <InboxIcon />
+                Label
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <ArchiveIcon />
+                Mijn lopende zaken
+                <BadgeCounter>2</BadgeCounter>
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <ArchiveIcon />
+                Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+          <SidenavList>
+            <SidenavItem>
+              <SidenavLink href="/#">
+                <ArchiveIcon />
+                Lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+          </SidenavList>
+        </Sidenav>
+        <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
       </ResponsiveContent>
       <PageFooter>
         <Footer
