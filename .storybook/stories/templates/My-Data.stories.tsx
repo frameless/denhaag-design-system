@@ -9,7 +9,8 @@ import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../compone
 import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
 import { footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
 
-import './story-login.css';
+// import './story-login.css'; <-vroegere oplossing niet meer valid
+import './template-story.scss';
 
 // import { List, ListItem, ListItemText, ListItemIcon } from '../../../components/List/src';
 import {
