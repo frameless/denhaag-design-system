@@ -204,6 +204,44 @@ export const myDataPage: Story = {
               </TableRow>
             </TableBody>
           </Table>
+
+          <List subheader={<ListSubheader>Inschrijving</ListSubheader>}>
+            <Link href="#">
+              <ListItem
+                primaryText="Meer informatie over adresonderzoek"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
+            <Link href="#">
+              <ListItem
+                primaryText="Gegevens in BRP laten corrigeren, wijzigen of verwijderen"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
+            <Link href="#">
+              <ListItem
+                primaryText="Verhuizing doorgeven"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
+            <Link href="#">
+              <ListItem
+                primaryText="Verandering naamgebruik aanvragen"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
+            <Link href="#">
+              <ListItem
+                primaryText="Vermelding geslacht wijzigen (transgenders)"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
+            <Link href="#">
+              <ListItem
+                primaryText="Geheimhouding persoonsgegevens aanvragen"
+                leftIcon={<ArrowRightIcon color="inherit"></ArrowRightIcon>}
+              />
+            </Link>
           </List>
         </main>
       </ResponsiveContent>
