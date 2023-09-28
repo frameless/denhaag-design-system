@@ -11,6 +11,18 @@ import { copyright, headerProps, footerLegalData, footerSocialData, newsletterDa
 
 import './template-story.scss';
 
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableHead,
+  TableRow,
+  TableCell,
+  TableHeader,
+} from '../../../components/Table/src';
+
+import { ArrowRightIcon } from '../../../components/Icons/src';
+
 const meta = {
   title: 'Templates/OverviewPage',
   parameters: {
@@ -69,6 +81,33 @@ export const OverviewPage: Story = {
             In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
             wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
           </Paragraph>
+          <Table>
+            <TableCaption>Wat ik moet regelen</TableCaption>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableHeader className="heman">He-Man</TableHeader>
+
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableHeader scope="row">Geef informatie voor uw aanvraag subsidie geluidisolatie</TableHeader>
+                <TableCell>nog 2 dagen<ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
+
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein </TableHeader>
+                <TableCell>vóór 1 maart 2023</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Verleng uw identiteitskaart</TableHeader>
+                <TableCell>vóór 1 maart 2023</TableCell>
+
+              </TableRow>
+            </TableBody>
+          </Table>
+          <Table></Table>
         </main>
       </ResponsiveContent>
       <PageFooter>
