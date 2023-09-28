@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2 } from '../../../components/Typography/src';
-import Alert from '../../../components/Alert/src';
+import { Heading2 } from '../../../components/Typography';
+import Alert from '../../../components/Alert';
 import React from 'react';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
+import { Page, PageHeader, PageFooter } from '../../../components/Page';
+import { HeaderLogic, HeaderLogicProps } from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import ResponsiveContent from '../../../components/ResponsiveContent';
 import { AuthenticationCardGroup } from '../../../components/CardGroup/src/story-template';
 import { headerProps, footerLegalData, footerSocialData, newsletterData, contactData, copyright } from './util';
 

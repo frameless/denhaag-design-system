@@ -1,14 +1,14 @@
 import { StoryObj } from '@storybook/react';
 import React from 'react';
-import { Heading2, Heading3 } from '../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/Icons/src';
-import { Status, StatusProps } from '../../../components/ProcessSteps/src';
-import { File } from '../../../components/File/src';
+import { Heading2, Heading3 } from '../../../components/Typography';
+import { Page, PageHeader, PageFooter } from '../../../components/Page';
+import { HeaderLogic } from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import ResponsiveContent from '../../../components/ResponsiveContent';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav';
+import { ArchiveIcon, GridIcon, UserIcon, BookIcon } from '../../../components/Icons';
+import { Status, StatusProps } from '../../../components/ProcessSteps';
+import { File } from '../../../components/File';
 import {
   copyright,
   headerProps,

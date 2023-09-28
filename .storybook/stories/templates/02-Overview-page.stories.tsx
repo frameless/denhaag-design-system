@@ -1,12 +1,12 @@
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
-import { Heading2, Paragraph } from '../../../components/Typography/src';
-import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
-import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
-import Footer from '../../../components/Footer/src';
-import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
+import { Heading2, Paragraph } from '../../../components/Typography';
+import { Page, PageHeader, PageFooter } from '../../../components/Page';
+import { HeaderLogic, HeaderLogicProps } from '../../../components/Header';
+import Footer from '../../../components/Footer';
+import ResponsiveContent from '../../../components/ResponsiveContent';
+import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav';
+import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
 import './template-story.scss';
