@@ -1,8 +1,10 @@
 import { Meta, StoryObj } from '@storybook/react';
 import React from 'react';
+import { Heading2 } from '../../../components/Typography/src';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
+import { CaseCard } from '../../../components/Card/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { InboxIcon, ArchiveIcon, UserIcon, ParkingIcon, CircleInformationIcon } from '../../../components/Icons/src';
 import {
@@ -16,9 +18,10 @@ import {
 
 import './template-story.scss';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
+import { Tabs } from '../../../components/Tab/src';
 
 const meta = {
-  title: 'Templates',
+  title: 'Templates/Lopende zaken page',
   parameters: {
     chromatic: { viewports: [1768, 1280, 768, 360] },
   },
@@ -35,6 +38,11 @@ const zakenHeaderProps: HeaderLogicProps = {
       { label: 'Mijn lopende zaken' },
     ],
   },
+};
+
+const cardCaseProps = { title: 'Aanvraag subsidie geluidsisolatie', date: new Date('01-01-2021') };
+const tabsProps = {
+  tabdata: ['Alle zaken', 'Zaken in behandeling', 'Zaken in afwachting', 'Zaken afgerond'],
 };
 
 // Login page
@@ -94,6 +102,12 @@ export const LopendeZaken: Story = {
             </SidenavItem>
           </SidenavList>
         </Sidenav>
+        <main className="denhaag-page-content__main">
+          <Heading2>Mijn lopende zaken</Heading2>
+          <Tabs {...TabsProps}></Tabs>
+          <CaseCard {...CardCaseProps}></CaseCard>
+          <CaseCard {...CardCaseProps}></CaseCard>
+        </main>
       </ResponsiveContent>
       <PageFooter>
         <Footer
