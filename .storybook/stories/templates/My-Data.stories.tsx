@@ -96,6 +96,114 @@ export const myDataPage: Story = {
               </ListItemText>
             </ListItem>
           </List> */}
+          <Table>
+            <TableCaption>Contact</TableCaption>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableHeader className="heman">He-Man</TableHeader>
+                <TableHeader className="skeletor">Skeletor</TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableHeader scope="row">E-mailadres</TableHeader>
+                <TableCell>anneklap@hotmail.com</TableCell>
+                <TableCell>
+                  <EditIcon></EditIcon> Aanpassen
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Telefoonnummer</TableHeader>
+                <TableCell>-</TableCell>
+                <TableCell>
+                  {' '}
+                  <EditIcon></EditIcon> Aanpassen
+                </TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <Table>
+            <TableCaption>Persoonsgegevens</TableCaption>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableHeader className="heman">He-Man</TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableHeader scope="row">Voornamen</TableHeader>
+                <TableCell>Anne</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Geslachtsnaam</TableHeader>
+                <TableCell>Klap</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Geslacht</TableHeader>
+                <TableCell>Vrouw</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Burgerservicenummer</TableHeader>
+                <TableCell>203674581</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Geboortedatum</TableHeader>
+                <TableCell>05-12-1988</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Nationaliteit</TableHeader>
+                <TableCell>Nederlandse</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <Table>
+            <TableCaption>Adres</TableCaption>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableHeader className="heman">He-Man</TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableHeader scope="row">Straat</TableHeader>
+                <TableCell>Balistraat 44</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Postcode en plaats</TableHeader>
+                <TableCell>2538 JH's-Gravenhage</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Aanvangsdatum</TableHeader>
+                <TableCell>03-04-2002</TableCell>
+              </TableRow>
+              <TableRow>
+                <TableHeader scope="row">Aantal inwoners op woonadres</TableHeader>
+                <TableCell>3</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
+          <Paragraph>
+            Staat er een ander aantal inwoners op uw adres ingeschreven dan u verwacht? Dan kunt u een
+            <Link href="#"> adresonderzoek aanvragen </Link> bij de gemeente. U kunt een adresonderzoek ook intrekken.
+          </Paragraph>
+          <Table>
+            <TableCaption>Inschrijving</TableCaption>
+            <TableHead>
+              <TableRow>
+                <TableCell />
+                <TableHeader className="heman">He-Man</TableHeader>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              <TableRow>
+                <TableHeader scope="row">Indicatie geheim</TableHeader>
+                <TableCell>Nee</TableCell>
+              </TableRow>
+            </TableBody>
+          </Table>
           </List>
         </main>
       </ResponsiveContent>
