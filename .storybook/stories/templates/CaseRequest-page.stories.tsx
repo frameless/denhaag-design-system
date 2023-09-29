@@ -1,17 +1,14 @@
 import { Meta, StoryObj } from '@storybook/react';
-import { Heading2 } from '../../../components/Typography/src';
+import { Heading2, Heading3 } from '../../../components/Typography/src';
 import { Sidenav, SidenavList, SidenavItem, SidenavLink } from '../../../components/Sidenav/src';
+import { ProcessSteps } from '../../../components/ProcessSteps/src';
 import { BadgeCounter } from '../../../components/BadgeCounter/src';
 import { ArchiveIcon, CircleInformationIcon, InboxIcon, UserIcon } from '../../../components/Icons/src';
-import { Divider } from '../../../components/Divider/src';
-import { Link } from '../../../components/Link/src';
-import Alert from '../../../components/Alert/src';
 import React from 'react';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
-import { AuthenticationCardGroup } from '../../../components/CardGroup/src/story-template';
 import {
   headerProps,
   footerLegalData,
@@ -58,7 +55,7 @@ const loginHeaderProps: HeaderLogicProps = {
 
 type Story = StoryObj<typeof meta>;
 
-export const Request: Story = {
+export const CaseRequestPage: Story = {
   render: (args) => (
     <Page {...args}>
       <PageHeader>
@@ -118,6 +115,7 @@ export const Request: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Aanvraag subsidie geluidsisolatie</Heading2>
+          <Heading3>Status</Heading3>
         </main>
       </ResponsiveContent>
       <PageFooter>
