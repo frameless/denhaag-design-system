@@ -49,7 +49,7 @@ const myDataHeaderProps: HeaderLogicProps = {
   breadcrumbs: {
     navigationPath: [
       { label: 'Home', href: 'https://denhaag.nl/' },
-      { label: 'MijnDenHaag' },
+      { label: 'MijnDenHaag', href: 'https://denhaag.nl/' },
       { label: 'Mijn gegevens' },
     ],
   },
