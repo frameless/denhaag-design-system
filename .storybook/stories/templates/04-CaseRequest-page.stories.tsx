@@ -5,7 +5,6 @@ import { BadgeCounter } from '../../../components/BadgeCounter/src';
 import { DescriptionList } from '../../../components/DescriptionList/src';
 import { File } from '../../../components/File/src';
 import { ProcessSteps } from '../../../components/ProcessSteps/src';
-import { ContactTimelineMobile } from '../../../components/ContactTimelineMobile/src';
 import { ArchiveIcon, CircleInformationIcon, InboxIcon, UserIcon } from '../../../components/Icons/src';
 import { Page, PageHeader, PageFooter } from '../../../components/Page/src';
 import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
