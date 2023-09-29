@@ -112,17 +112,7 @@ export const myDataPage: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Mijn gegevens</Heading2>
-          <Paragraph>
-            In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
-            wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
-          </Paragraph>
-          {/* <List>
-            <ListItem primaryText="test">
-              <ListItemText>
-                <ListItemIcon></ListItemIcon>
-              </ListItemText>
-            </ListItem>
-          </List> */}
+
           <Table>
             <TableCaption>Contact</TableCaption>
             <TableHead>
