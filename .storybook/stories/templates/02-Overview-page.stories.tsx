@@ -6,7 +6,7 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
+import { ArchiveIcon, FavoriteIcon, GridIcon, InboxIcon, UserIcon, ArrowRightIcon, HouseIcon, ParkingIcon, AlertTriangleIcon } from '../../../components/Icons/src';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
 import './template-story.scss';
@@ -21,7 +21,6 @@ import {
   TableHeader,
 } from '../../../components/Table/src';
 
-import { ArrowRightIcon, CircleWarningIcon } from '../../../components/Icons/src';
 import { CaseCard } from '../../../components/Card/src';
 
 
@@ -55,26 +54,44 @@ export const OverviewPage: Story = {
           <SidenavList>
             <SidenavItem>
               <SidenavLink current={true}>
-                <GridIcon />
+                <InboxIcon />
                 Overzicht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
                 <ArchiveIcon />
-                Lopende zaken
+                Mijn lopende zaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink >
+                <GridIcon />
+                Belastingzaken
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <FavoriteIcon />
-                Thema's
+                <HouseIcon />
+                WOZ
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
+                <ParkingIcon />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink >
+                <GridIcon />
+                Erfpacht
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink >
                 <UserIcon />
-                Mijn account
+                Mijn gegevens
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
@@ -98,7 +115,8 @@ export const OverviewPage: Story = {
               <TableRow>
                 <TableHeader scope="row">Geef informatie voor uw aanvraag subsidie geluidisolatie</TableHeader>
                 <TableCell>
-                   <CircleWarningIcon color="inherit"></CircleWarningIcon>
+                   <AlertTriangleIcon></AlertTriangleIcon>
+
                    nog 2 dagen!! <ArrowRightIcon color="inherit"></ArrowRightIcon></TableCell>
 
               </TableRow>
