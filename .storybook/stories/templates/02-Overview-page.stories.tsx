@@ -14,22 +14,11 @@ import {
   ArrowRightIcon,
   HouseIcon,
   ParkingIcon,
-  // AlertTriangleIcon,
 } from '../../../components/Icons/src';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 import { Link } from '../../../components/Link/src';
 
 import './template-story.scss';
-
-// import {
-//   Table,
-//   TableBody,
-//   TableCaption,
-//   TableHead,
-//   TableRow,
-//   TableCell,
-//   TableHeader,
-// } from '../../../components/Table/src';
 
 import { CaseCard } from '../../../components/Card/src';
 
@@ -126,38 +115,6 @@ export const OverviewPage: Story = {
 
           <Action link="#example">Verleng uw identiteitskaart</Action>
 
-          {/* <br />
-          <br />
-          <Table>
-            <TableCaption>Wat ik moet regelen</TableCaption>
-            <TableHead>
-              <TableRow>
-                <TableCell />
-                <TableHeader className="heman">He-Man</TableHeader>
-              </TableRow>
-            </TableHead>
-            <TableBody>
-              <TableRow>
-                <TableHeader scope="row">Geef informatie voor uw aanvraag subsidie geluidisolatie</TableHeader>
-                <TableCell>
-                  <AlertTriangleIcon></AlertTriangleIcon>
-                  nog 2 dagen!! <ArrowRightIcon color="inherit"></ArrowRightIcon>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableHeader scope="row">Betaal uw parkeerbon van € 74,90 voor parkeren bij Valeriusplein </TableHeader>
-                <TableCell>
-                  vóór 1 maart 2023<ArrowRightIcon color="inherit"></ArrowRightIcon>
-                </TableCell>
-              </TableRow>
-              <TableRow>
-                <TableHeader scope="row">Verleng uw identiteitskaart</TableHeader>
-                <TableCell>
-                  <ArrowRightIcon color="inherit"></ArrowRightIcon>
-                </TableCell>
-              </TableRow>
-            </TableBody>
-          </Table> */}
           <Heading3>Mijn lopende zaken</Heading3>
           <Paragraph>
             <Link href="#" icon={<ArrowRightIcon />}>
