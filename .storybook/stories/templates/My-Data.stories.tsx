@@ -222,7 +222,7 @@ export const myDataPage: Story = {
             </TableBody>
           </Table>
 
-          <List subheader={<ListSubheader>Inschrijving</ListSubheader>}>
+          <List subheader={<ListSubheader>Wijzigingen en aanvragen BRP</ListSubheader>}>
             <Link href="#">
               <ListItem
                 primaryText="Meer informatie over adresonderzoek"
