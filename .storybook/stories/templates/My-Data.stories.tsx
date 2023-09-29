@@ -6,7 +6,15 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, FavoriteIcon, GridIcon, UserIcon } from '../../../components/Icons/src';
+import {
+  ArchiveIcon,
+  GridIcon,
+  InboxIcon,
+  UserIcon,
+  ArrowRightIcon,
+  HouseIcon,
+  ParkingIcon,
+} from '../../../components/Icons/src';
 import { footerLegalData, footerSocialData, newsletterData, contactData } from '../templates/util';
 
 // import './story-login.css'; <-vroegere oplossing niet meer valid
@@ -25,7 +33,7 @@ import {
 
 import { EditIcon } from '../../../components/Icons/src';
 import { List, ListSubheader, ListItem } from '../../../components/List/src';
-import { ArrowRightIcon } from '../../../components/Icons/src';
+
 import { Link } from '../../../components/Link/src';
 
 const meta = {
@@ -60,26 +68,44 @@ export const myDataPage: Story = {
           <SidenavList>
             <SidenavItem>
               <SidenavLink current={true}>
-                <GridIcon />
-                Overzicht
+                <InboxIcon />
+                Label
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
                 <ArchiveIcon />
-                Lopende zaken
+                Mijn lopende zaken
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
-                <FavoriteIcon />
-                Thema's
+                <GridIcon />
+                Belastingzaken
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <HouseIcon />
+                WOZ
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <ParkingIcon />
+                Parkeren
+              </SidenavLink>
+            </SidenavItem>
+            <SidenavItem>
+              <SidenavLink>
+                <GridIcon />
+                Erfpacht
               </SidenavLink>
             </SidenavItem>
             <SidenavItem>
               <SidenavLink>
                 <UserIcon />
-                Mijn account
+                Mijn gegevens
               </SidenavLink>
             </SidenavItem>
           </SidenavList>
