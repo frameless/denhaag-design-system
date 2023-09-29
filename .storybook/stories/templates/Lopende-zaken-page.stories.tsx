@@ -37,7 +37,9 @@ const zakenHeaderProps: HeaderLogicProps = {
   },
 };
 
-const cardCaseProps =  
+const cardCaseProps = { title: 'Aanvraag subsidie geluidsisolatie', date: new Date('10-17-2022') };
+const cardCaseProps2 = { title: 'Aanvraag Ooievaarspas', date: new Date('08-01-2022') };
+const tabsProps = { tabData: [{ label: 'Lopende Zaken', panelContent: '' }] };
 
 // Login page
 
@@ -98,9 +100,9 @@ export const LopendeZaken: Story = {
         </Sidenav>
         <main className="denhaag-page-content__main">
           <Heading2>Mijn lopende zaken</Heading2>
-          {/* <Tabs {...tabsProps}></Tabs> */}
+          <Tabs {...tabsProps}></Tabs>
           <CaseCard {...cardCaseProps}></CaseCard>
-          <CaseCard {...cardCaseProps}></CaseCard>
+          <CaseCard {...cardCaseProps2}></CaseCard>
         </main>
       </ResponsiveContent>
       <PageFooter>
