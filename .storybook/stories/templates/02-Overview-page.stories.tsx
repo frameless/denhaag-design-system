@@ -121,9 +121,10 @@ export const OverviewPage: Story = {
               Bekijk alle zaken
             </Link>
           </Paragraph>
-
-          <CaseCard date={new Date('2020-10-17T00:00:00.000Z')} href="#" title="Aanvraag subsidie geluidsisolatie" />
-          <CaseCard date={new Date('2020-08-01T00:00:00.000Z')} href="#" title="Aanvraag Ooievaarspas" />
+          <section className="denhaag-card-group">
+            <CaseCard date={new Date('2020-10-17T00:00:00.000Z')} href="#" title="Aanvraag subsidie geluidsisolatie" />
+            <CaseCard date={new Date('2020-08-01T00:00:00.000Z')} href="#" title="Aanvraag Ooievaarspas" />
+          </section>
         </main>
       </ResponsiveContent>
       <PageFooter>
