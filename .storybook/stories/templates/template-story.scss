@@ -25,3 +25,8 @@
     margin-block-start: 32px;
   }
 }
+
+//HACK temporarily fix for a 3 row to 2 row card-case-group
+.denhaag-card-group {
+  grid-template-columns: repeat(2, 1fr) !important;
+}
