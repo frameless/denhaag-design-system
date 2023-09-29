@@ -69,7 +69,7 @@ export const CaseRequestPage: Story = {
       <PageHeader>
         <HeaderLogic {...loginHeaderProps} />
       </PageHeader>
-      <ResponsiveContent className="denhaag-page-content">
+      <ResponsiveContent className="denhaag-page-content denhaag-responsive-content--sidebar">
         <Sidenav>
           <SidenavList>
             <SidenavItem>
