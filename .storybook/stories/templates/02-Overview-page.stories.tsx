@@ -6,7 +6,7 @@ import { HeaderLogic, HeaderLogicProps } from '../../../components/Header/src';
 import Footer from '../../../components/Footer/src';
 import ResponsiveContent from '../../../components/ResponsiveContent/src';
 import { Sidenav, SidenavItem, SidenavLink, SidenavList } from '../../../components/Sidenav/src';
-import { ArchiveIcon, FavoriteIcon, GridIcon, InboxIcon, UserIcon, ArrowRightIcon, HouseIcon, ParkingIcon, AlertTriangleIcon } from '../../../components/Icons/src';
+import { ArchiveIcon, GridIcon, InboxIcon, UserIcon, ArrowRightIcon, HouseIcon, ParkingIcon, AlertTriangleIcon } from '../../../components/Icons/src';
 import { copyright, headerProps, footerLegalData, footerSocialData, newsletterData, contactData } from './util';
 
 import './template-story.scss';
