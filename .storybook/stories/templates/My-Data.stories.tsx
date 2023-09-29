@@ -115,13 +115,13 @@ export const myDataPage: Story = {
 
           <Table>
             <TableCaption>Contact</TableCaption>
-            <TableHead>
+            {/* <TableHead>
               <TableRow>
                 <TableCell />
                 <TableHeader className="heman">He-Man</TableHeader>
                 <TableHeader className="skeletor">Skeletor</TableHeader>
               </TableRow>
-            </TableHead>
+            </TableHead> */}
             <TableBody>
               <TableRow>
                 <TableHeader scope="row">E-mailadres</TableHeader>
@@ -142,12 +142,12 @@ export const myDataPage: Story = {
           </Table>
           <Table>
             <TableCaption>Persoonsgegevens</TableCaption>
-            <TableHead>
+            {/* <TableHead>
               <TableRow>
                 <TableCell />
                 <TableHeader className="heman">He-Man</TableHeader>
               </TableRow>
-            </TableHead>
+            </TableHead> */}
             <TableBody>
               <TableRow>
                 <TableHeader scope="row">Voornamen</TableHeader>
@@ -177,12 +177,12 @@ export const myDataPage: Story = {
           </Table>
           <Table>
             <TableCaption>Adres</TableCaption>
-            <TableHead>
+            {/* <TableHead>
               <TableRow>
                 <TableCell />
                 <TableHeader className="heman">He-Man</TableHeader>
               </TableRow>
-            </TableHead>
+            </TableHead> */}
             <TableBody>
               <TableRow>
                 <TableHeader scope="row">Straat</TableHeader>
@@ -208,12 +208,12 @@ export const myDataPage: Story = {
           </Paragraph>
           <Table>
             <TableCaption>Inschrijving</TableCaption>
-            <TableHead>
+            {/* <TableHead>
               <TableRow>
                 <TableCell />
                 <TableHeader className="heman">He-Man</TableHeader>
               </TableRow>
-            </TableHead>
+            </TableHead> */}
             <TableBody>
               <TableRow>
                 <TableHeader scope="row">Indicatie geheim</TableHeader>

@@ -99,8 +99,7 @@ export const OverviewPage: Story = {
         <main className="denhaag-page-content__main">
           <Heading2>Hallo, Anne Klap!</Heading2>
           <Paragraph>
-            In MijnDenHaag kunt u zelf u persoonlijke zaken regelen wanneer u het uitkomt. Denk aan zaken zoals het zien
-            wanneer uw aanvraag klaar is of het bijkopen van extra parkeertegoed.
+In MijnDenHaag kunt u zelf uw persoonlijke zaken regelen wanneer het u uitkomt. U kunt bijvoorbeeld uw rekeningen betalen en zien wanneer uw aanvraag klaar is.
           </Paragraph>
           <Table>
             <TableCaption>Wat ik moet regelen</TableCaption>
